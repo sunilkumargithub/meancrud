@@ -1,0 +1,11 @@
+<p>Update works</p>
+
+<div class="row" *ngFor="let emp of employee; let i=index">
+{{i}},,,,{{emp._id}} {{emp.name}} {{emp.mobile}} {{emp.email}}
+
+
+<button (click)="editemployee(emp,i)">Edit</button>
+<button  (click)="deleteemployee(emp)"> delete</button>
+
+</div>
+

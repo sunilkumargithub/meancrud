@@ -1,0 +1,18 @@
+<p>
+  create works!
+</p>
+
+
+<form (ngSubmit)="oncreate(createemployee)"   #createemployee="ngForm" >
+name:
+<input type="text" name="name"    ngModel="joy" ><br>
+mobile
+<input type="number" name="mobile"   ngModel="984645674674"><br>
+email:
+<input type="text" name="email" ngModel="jayram.singh@gmail.com" ><br>
+salary:
+<input type="number" name="salary"  ngModel="10000"><br><br>
+
+<button type="submit">create</button>
+</form>
+<p style="color:orchid">{{Response}}</p>

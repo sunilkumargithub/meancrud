@@ -1,0 +1,11 @@
+<p>
+  studentread works!
+</p>
+
+<div *ngFor= "let studentel of student  | async">
+{{studentel.name}}
+{{studentel.email}}
+{{studentel.mobile}}
+{{studentel.address}}
+
+</div>

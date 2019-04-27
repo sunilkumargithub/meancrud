@@ -1,0 +1,29 @@
+<br>
+
+
+
+
+<form (ngSubmit)="onupdate(formvalues)"   #formvalues="ngForm">
+<div *ngFor="let empl of Employee">
+<div>
+  name:<input type="text" name="name" ngModel="{{empl.name}}" >
+</div>
+<div>
+    email:<input type="text" name="email" ngModel="{{empl.email}}"  >
+  </div>
+  <div>
+      salary:<input type="text" name="salary"  ngModel="{{empl.salary}}">
+    </div>
+    <div>
+        mobile:<input type="number" name="mobile"  ngModel="{{empl.mobile}}" >
+      </div>
+      <input type="hidden"name="_id" ngModel="{{empl._id}}">
+</div>
+<button type="submit" >Update</button>
+
+</form>
+<h3 style="color: fuchsia">{{responsemessage}}</h3>
+
+
+
+

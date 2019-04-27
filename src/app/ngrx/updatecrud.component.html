@@ -1,0 +1,17 @@
+<p>
+UPDATE WORK...............
+</p>
+
+<div class="right" *ngIf="Employee">
+
+  <h3>Employee</h3>
+  <ul>
+    <li
+    (click)="delTutorial(i)"
+     *ngFor="let emp of Employee | async;
+     let i = index">
+    {{ emp.name }}   {{ emp.mobile }}   {{ emp.email }}   {{ emp.salary }}
+    </li>
+  </ul>
+
+</div>
